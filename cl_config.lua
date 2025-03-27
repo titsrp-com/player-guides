@@ -125,68 +125,74 @@ Guide.Config.Pages = { -- That's the structure that I'm aiming for
         }
     },
     [7] = {
-        strName = "Basing",
+        strName = "Basing & Raids",
         tblSlides = {
             [1] = {
-                strTitle = "TitsRP Basing Tutorial",
-                strDescription = "It looks like you've just bought your first base! Here is a quick tutorial on how you might be raided, how to defend yourself in a raid, and how to use your base to it's fullest potential in order to make money, create items, grow drugs, etc.",
-                strImagePath = "k6x3ITr"
+                strTitle = "Basing and raid basics",
+                strDescription = "Basing and raiding are fundamental elements of TitsRP. Raiders focus on targeting your valuable entities, while base owners must design secure bases. Learn about the tools used by raiders, common strategies they employ, and methods to defend your base. If you need additional support or have questions, join our Discord at <URL:https://tit.gg/discord> and ask in #general-chat.",
+                strImagePath = "Rao9Ufz"
             },
             [2] = {
                 strTitle = "Securing your base",
-                strDescription = ("Players will try to raid your base to steal your money making entities such as your <ITEM:%s>, a <ITEM:%s>, or drugs such as <ITEM:%s>. You need more protection than a simple door can offer. This involves building walls between the raider and your money-making entities."):format(util.TableToJSON( { class = "sprinter_money_printer"}),util.TableToJSON( { class = "sugar_processor"}),util.TableToJSON( { class = "sugardrug_weed"})),
-                strImagePath = "7m17Ycw"
+                strDescription = ("Raiders typically aim to steal valuable entities such as your <ITEM:%s>, <ITEM:%s>, or drugs like <ITEM:%s>. A single door or weak defense won’t be enough to protect your assets. Consider building multiple layers of walls and using other defensive strategies to slow down raiders."):format(util.TableToJSON( { class = "sprinter_money_printer"}),util.TableToJSON( { class = "sugar_processor"}),util.TableToJSON( { class = "sugardrug_weed"})),
+                strImagePath = "cPy7Wqp"
             },
             [3] = {
-                strTitle = "Designing your base",
-                strDescription = "The more walls your raider needs to break through, the more secure your base will be because it will be more difficult and expensive for them to raid you. It's up to you how to design your base. There are no restrictions on how complex it can be.",
-                strImagePath = "cPy7Wqp"
+                strTitle = "Setting up your base",
+                strDescription = "The design of your base plays a significant role in its defense. More layers of walls and strategic placement can increase the cost and difficulty of raiding. If you’re just starting out, teaming up with others for base defense is recommended. The !party system allows for effective team communication and coordination.",
+                strImagePath = "CdamRsf"
             },
             [4] = {
                 strTitle = "Building your base",
-                strDescription = "You may use any prop you like to build your base. VIPs can use the AdvDupe2 tool to save their base and spawn it back in at any time. This tool allows you to modify and improve your base design over time. For players with access to Advdupe, there are some really great player-made dupes available on the community forums at <URL:https://forums.titsrp.com>.",
+                strDescription = "You can use any prop to construct your base. VIPs have access to the AdvDupe2 tool, which allows you to save and modify your base designs without losing progress. There are also player-made base dupes available for free on the forums, which you can use to enhance your base design: <URL:https://forums.titsrp.com>.",
                 strImagePath = "k6x3ITr"
             },
             [5] = {
-                strTitle = "Building your base (One-way Props)",
-                strDescription = "Make use of designs that include fences you can shoot through and one-way props that limit your raider's ability to see into your base while raiding. Click here to see a tutorial on how to make one-way props. <URL:https://steamcommunity.com/sharedfiles/filedetails/?id=2826519778>.",
+                strTitle = "One-way props",
+                strDescription = "Combining fences and one-way props can greatly improve your base defense. These props allow you to observe and shoot raiders while remaining hidden. Mastering the use of one-way props makes it much harder for raiders to successfully invade your base. For a detailed tutorial, visit <URL:https://steamcommunity.com/sharedfiles/filedetails/?id=2826519778>.",
                 strImagePath = "QmctR1e"
             },
             [6] = {
-                strTitle = "Building your base (Fading Doors & Keypads)",
-                strDescription = "You may use fading doors and keypads to create a path that your raider needs to follow to breach your base. Combining that with entities like motion detectors will give you an advantage by making their presence known and slowing them down while you counter the raid.",
+                strTitle = "Fading doors & keypads",
+                strDescription = "Fading doors, keypads, and walls can force raiders through a controlled, narrow path, giving you more time to defend. Using craftable motion detectors can notify you whenever a raider approaches your base. Experimenting with these tools will increase your base's defense and slow down raiders.",
                 strImagePath = "aTqAaJv"
             },
             [7] = {
                 strTitle = "Getting raided",
-                strDescription = "Players will try to raid your base to steal or destroy your money-making entities. Because players are limited by the number of their own money making entites that they can spawn, they will most often try to steal yours. Police may also try to raid you to destroy your entities if they are considered illegal under the law.",
+                strDescription = "When raided, raiders will typically target your money-making entities, as they are limited in what they can spawn. Be mindful of DEA agents who may raid your base for drugs, especially weed, using drug-sniffing dogs. To minimize the risk of detection, keep your crops away from walls and windows.",
                 strImagePath = "YFyDdfL"
             },
             [8] = {
-                strTitle = "Raiding tools & techniques (Explosives)",
-                strDescription = ("Players have a number of tools at their disposal to raid your base with. For more advanced base designs, a raider might use explosives such as a <ITEM:%s> or a weaker explosive with less range such as a <ITEM:%s> to blow straight through your walls. These and other types of explosives might temporarily destroy your walls or make them less effective by making them transparent."):format(util.TableToJSON( { class = "spawned_weapon", weaponclass = "weapon_c4"}), util.TableToJSON( { class = "spawned_weapon", weaponclass = "sugar_plantbomb"} )),
+                strTitle = "Raiding with explosives",
+                strDescription = ("Raiders have access to various tools, including explosives like a <ITEM:%s> or a weaker one like a <ITEM:%s>. These explosives can destroy props or temporarily make them transparent, allowing raiders to bypass your defenses."):format(util.TableToJSON( { class = "spawned_weapon", weaponclass = "weapon_c4"}), util.TableToJSON( { class = "spawned_weapon", weaponclass = "sugar_plantbomb"} )),
                 strImagePath = "vSXaCbW"
             },
             [9] = {
-                strTitle = "Raiding tools & techniques (Explosives)",
-                strDescription = "You need a large base with a ton of walls to defend against this type of raid since the explosive will only damage walls within a certain radius. More walls means the raider needs to deploy multiple explosives which will buy you time to heal and change defensive positions.",
+                strTitle = "Raiding with explosives",
+                strDescription = "To defend against explosives, use a larger base with multiple layers of walls. Explosives cause damage only within a limited radius, so raiders may need to use multiple explosives to break through. This gives you time to heal, reposition, or counter their raid. Some explosives can even be moved or shot at to change their trajectory.",
                 strImagePath = "svofL7s"
             },
             [10] = {
-                strTitle = "Raiding tools & techniques (Hand Tools)",
-                strDescription = ("More hands-on raid methods include using tools such as a <ITEM:%s> or a <ITEM:%s>. These tools are much faster and more effective at breaching walls and doors respectively than explosives, but require the use of stealth to avoid detection and for the raider to be physically next to the wall. This makes them an easier target for defensive fire."):format(util.TableToJSON( { class = "spawned_weapon", weaponclass = "weapon_blowtorch"}), util.TableToJSON( { class = "spawned_weapon", weaponclass = "lockpick"} )),
+                strTitle = "More tools for raiding",
+                strDescription = ("Stealthier raiding methods may involve tools like a <ITEM:%s> or a <ITEM:%s>, which are faster at breaching walls and doors than explosives. However, these tools require stealth to avoid detection, as the user must be close to the target and is vulnerable to defensive fire."):format(util.TableToJSON( { class = "spawned_weapon", weaponclass = "weapon_blowtorch"}), util.TableToJSON( { class = "spawned_weapon", weaponclass = "lockpick"} )),
                 strImagePath = "8s7GGVk"
             },
             [11] = {
-                strTitle = "Defending in a raid",
-                strDescription = ("Defending a raid can be difficult unless you have a large and intricate base design. Take advantage of items such as <ITEM:%s>, which can be crafted to increase your max HP or damage, a <ITEM:%s> to make yourself less visible to your raider, or an <ITEM:%s> to increase your armor. A combination of two or more of these items will give you the greatest advantage aginst your raider."):format(util.TableToJSON( { class = "sugar_food"}),util.TableToJSON( { class = "sugar_talisman"}),util.TableToJSON( { class = "armor_pack"})),
+                strTitle = "Defending your base in a raid",
+                strDescription = ("Defending your base during a raid requires preparation and the right items. Equip items like <ITEM:%s> to boost your health, <ITEM:%s> to reduce your visibility, or <ITEM:%s> for better armor. Combining multiple items increases your chances of successfully repelling the raiders."):format(util.TableToJSON( { class = "sugar_food"}),util.TableToJSON( { class = "sugar_talisman"}),util.TableToJSON( { class = "armor_pack"})),
                 strImagePath = "5h154fX"
             },
             [12] = {
                 strTitle = "Stay prepared",
-                strDescription = ("Make sure you always have a <ITEM:%s> equipped to heal yourself, a <ITEM:%s>, and plenty of ammo because raids can last several minutes. A <ITEM:%s> can be crafted and used to provide a quick boost to your health and movement speed."):format(util.TableToJSON( { class = "spawned_weapon", weaponclass = "weapon_medkit"}),util.TableToJSON( { class = "armor_pack"}),util.TableToJSON( { class = "spawned_weapon", weaponclass = "rust_syringe"})),
+                strDescription = ("Always be prepared during a raid by having items like a <ITEM:%s> for healing, a <ITEM:%s> for armor, and plenty of ammo. Additionally, carry a <ITEM:%s> to quickly boost your health and movement speed during a raid. These items are essential for surviving and winning in long raids."):format(util.TableToJSON( { class = "spawned_weapon", weaponclass = "weapon_medkit"}),util.TableToJSON( { class = "armor_pack"}),util.TableToJSON( { class = "spawned_weapon", weaponclass = "rust_syringe"})),
                 strImagePath = "IDzMPAH"
+            },
+            [13] = {
+                strTitle = "Read the rules",
+                strDescription = ("Be sure to read the server's basing rules, as they may differ from other servers. For a detailed overview, visit <URL:https://titsrp.com/rules>. If you have questions or need clarification, join the Discord at <URL:https://tit.gg/discord> and ask in #general-chat."),
+                strImagePath = "xbetziG"
             },
         }
     },
+    
 }
